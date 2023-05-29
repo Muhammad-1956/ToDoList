@@ -23,7 +23,7 @@ This is a simple web application that allows you to manage your tasks with a to-
 
 ## Live Demo
 
-You can view a live demo of this project by visiting the[https://your-username.github.io/to-do-list/toDoList.html](https://muhammad-1956.github.io/ToDoList/toDoList.html)) link.
+You can view a live demo of this project by visiting the [https://your-username.github.io/to-do-list/toDoList.html](https://muhammad-1956.github.io/ToDoList/toDoList.html) link.
 
 ## Contributing
 
