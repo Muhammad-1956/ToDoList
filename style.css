@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: rgba(40, 60, 117);
+}
+.container,
+.container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.container-2{
+    margin-top: 7px;
+}
+input {
+    width: 100%;
+    padding: 15px 15px 15px 0px;
+    padding-left: 50px;
+    padding-right: 180px;
+    display: block;
+}
+input::placeholder {
+    font: 0.9rem/3 sans-serif;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+.Icon-inside,
+.tasks {
+    position:relative;
+}
+.clear{
+    clear: both;
+}
+.Icon-inside .inside {
+    position:absolute;
+    left:0;
+    top:10px;
+    padding:10px 15px;
+    color:#30A3F1;
+}
+button{
+    position: absolute;
+    right: 7px;
+    top: 11px;
+    color: #30A3F1;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+button i {
+    font-size: 28px;
+}
+hr{
+    border: 1px solid rgba(178, 196, 178, 0.179);
+
+}
+.tasks{
+    width: 380px;
+}
+.task{
+    padding: 15px 0px;
+    background-color: white;
+    margin-bottom: 8px;
+}
+.task p {
+    inline-size: 420px;
+    overflow-wrap: break-word; 
+    padding-left: 20px ;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(68, 63, 63);
+}
+.task i {
+    position: absolute;
+    right: 55px;
+    top: 16px;
+    color: rgb(25, 203, 25);
+    font-size: 20px;
+    cursor: pointer;
+}
+.task .fa-trash-can{
+    right: 15px;
+    color: red;
+}
+
+/* Media Queries */
+
+/* 320px — 480px: Mobile devices. */
+@media(min-width: 320px) and (max-width: 480px){
+    input, .tasks{
+        width: 310px;
+    }
+    .task p {
+        inline-size: 230px;
+    }
+}
+
+/* 481px — 768px: iPads, Tablets. */
+@media(min-width: 481px) and (max-width: 768px){
+    input, .tasks{
+        width: 430px;
+    }
+    .task p {
+        inline-size: 350px;
+    }
+}
+
+/* 769px — 1024px: Small screens, laptops. */
+@media(min-width: 769px){
+    input, .tasks{
+        width: 500px;
+    }
+}
