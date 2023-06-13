@@ -23,13 +23,17 @@ task.addEventListener('input', ()=> {
         containerr.remove();
         
     } else {
-        add.disabled = true;
-        add.style.opacity = '0.5';
+        checkIsEmpty();
         document.body.appendChild(containerr);
     }
 });
 
-
+    function checkIsEmpty(){
+        if(task.value.trim() == ''){
+            add.disabled = true;
+            add.style.opacity = '0.5';
+        }
+    }
 // Function to check if the array is not empty and remove the container if necessary
     function checkArrLength() {
         if (arr.length > 0){
@@ -86,7 +90,7 @@ add.addEventListener("click", ()=>{
     document.body.appendChild(container);
     // Clear the input field value
     task.value = "";
-
+    checkIsEmpty();
     // Add event listener to delete the task
     del.addEventListener("click", (e)=>{
         for (let i = 0; i < arr.length; i++) {
